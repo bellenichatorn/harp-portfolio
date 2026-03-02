@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belle Nichatorn Resume</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .header-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .header-name {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #bfa14a;
+      letter-spacing: 0.02em;
+    }
+    .header-contact {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      font-size: 1.05rem;
+    }
+    .header-contact a {
+      color: #bfa14a;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .header-contact a:hover {
+      color: #222;
+    }
+    .header-icons {
+      display: flex;
+      gap: 1.1rem;
+      align-items: center;
+    }
+    .header-icons img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #f3e1b6;
+      padding: 4px;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+    }
+    .header-icons img:hover {
+      box-shadow: 0 4px 16px rgba(191,161,74,0.18);
+    }
+    h2 {
+      color: #bfa14a;
+      font-size: 1.25rem;
+      margin-top: 2.2rem;
+      margin-bottom: 0.7rem;
+      letter-spacing: 0.03em;
+      font-weight: 700;
+    }
+    .section {
+      margin-bottom: 1.7rem;
+    }
+    .exp-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+      margin-bottom: 1.2rem;
+    }
+    .exp-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #f3e1b6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: box-shadow 0.2s;
+    }
+    .exp-logo img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .exp-logo:hover {
+      box-shadow: 0 4px 16px rgba(191,161,74,0.18);
+    }
+    .exp-details {
+      flex: 1;
+    }
+    .exp-title {
+      font-weight: 600;
+      font-size: 1.08rem;
+      margin-bottom: 0.1rem;
+    }
+    .exp-meta {
+      font-size: 0.98rem;
+      color: #888;
+      margin-bottom: 0.2rem;
+    }
+    .exp-desc {
+      font-size: 0.97rem;
+      color: #444;
+      margin-bottom: 0.2rem;
+    }
+    .skills-list, .awards-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem 1.2rem;
+      font-size: 0.98rem;
+      color: #555;
+    }
+    .awards-list {
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 700px) {
+      .resume-container { padding: 1.2rem 0.5rem; }
+      .header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .exp-entry { flex-direction: column; gap: 0.5rem; }
+      .exp-logo { margin-bottom: 0.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="header">
+      <div class="header-info">
+        <div class="header-name">Nichatorn (Belle) Tangkuptanon</div>
+        <div class="header-contact">
+          <span>(510) 646-6399</span>
+          <a href="mailto:bellenichatorn@berkeley.edu">bellenichatorn@berkeley.edu</a>
+          <a href="https://linkedin.com/in/bellenichatorn" target="_blank">linkedin.com/in/bellenichatorn</a>
+        </div>
+      </div>
+      <div class="header-icons">
+        <a href="mailto:bellenichatorn@berkeley.edu"><img src="emailicon.png" alt="Email"></a>
+        <a href="https://linkedin.com/in/bellenichatorn" target="_blank"><img src="linkedinicon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="exp-entry">
+        <div class="exp-logo"><img src="berkeleylogo.svg" alt="UC Berkeley"></div>
+        <div class="exp-details">
+          <div class="exp-title">UC Berkeley – Management, Entrepreneurship, & Technology (M.E.T.) Program</div>
+          <div class="exp-meta">Berkeley, California &bull; GPA: 3.8/4.0 &bull; Graduation: May 2025</div>
+          <div class="exp-desc">
+            Dual Degree: Industrial Engineering and Operations Research and Business, Minor: Data Science<br>
+            <b>Classes:</b> Engineering Economics, Accounting, Manufacturing and Design, Stochastic Processes, Probability and Statistics for Engineers, Management of Technological Innovation, Data Science, Ethics & AI, Blockchain Fundamentals, Zero Knowledge Proofs
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Experience</h2>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://hyperboliclabs.xyz" target="_blank"><img src="hyperboliclogo.png" alt="Hyperbolic Labs"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">Hyperbolic Labs (Crypto & AI Startup Funded by Polychain Capital)</div>
+          <div class="exp-meta">San Francisco, CA &bull; Ecosystem Growth & BD Intern &bull; Nov 2024 – Present</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Creating product synergies, researching 60+ DeAI infrastructure and AI Agent protocols to partner with for our GPU Marketplace and AI Inference Services, and performing market research on AI verifiability, multi-agent systems, Bittensor subnets, AI DePIN and etc</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://panteracapital.com" target="_blank"><img src="panteralogo.png" alt="Pantera Capital"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">Pantera Capital</div>
+          <div class="exp-meta">San Francisco, CA &bull; Ventures & Platform Intern &bull; May 2024 – Aug 2024</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Launched a token launch playbook to assist 233+ asks regarding tokenomics, and developing a resource repository for crypto portfolio companies, market-making, ICO/IEO/IDOs, fundraising, business development, go-to-market strategies, and regulations</li>
+              <li>Analyzed 80+ VC funds and conducting due diligence on DeFi, GameFi, AI, crypto infrastructure, and consumer deals to uncover investment theses, identify gaps, and pinpoint industry trends, successfully closing an early-stage venture DePIN/AI CDN deal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://www.generalcatalyst.com/" target="_blank"><img src="gclogo.png" alt="General Catalyst Logo"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">General Catalyst</div>
+          <div class="exp-meta">San Francisco, CA &bull; Venture Capital Fellow & Head of Community &bull; October 2023 – Present</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Invested in 3 student-founded startups, performing due diligence for AI, SaaS, Blockchain and Climate Tech startups, integrating AI tools to enhance and optimize our due diligence processes, and spearheading events and competitions for students to increase deal flow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://www.berkeleyfrontierfund.com/" target="_blank"><img src="bfflogo.png" alt="Berkeley Frontier Fund Logo"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">Berkeley Frontier Fund</div>
+          <div class="exp-meta">Berkeley, CA &bull; Venture Capital Investment Fellow &bull; May 2023 – August 2023</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Conducting due diligence on AI, healthcare, supply chain, blockchain startups for later stage VC investments, including research, financial modeling, competitor analysis, and portfolio monitoring. Compiling research and investment verticals for AI in 60+ pages deck</li>
+              <li>Managing 1B+, 500M, and AI pipelines with 1000+ startups, researching products, business models, financials, competitors, market size, and team highlights. Wrote investment memos for cell therapy and semiconductor startups and presenting to managing partners and LPs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://blockchain.berkeley.edu/" target="_blank"><img src="bablogo.png" alt="Blockchain at Berkeley Logo"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">Blockchain at Berkeley and Accelerator Program</div>
+          <div class="exp-meta">Berkeley, CA &bull; Managing Director &bull; January 2022 – May 2024</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Managing 15 portfolio companies, raised $50M+, and evaluated 40 Web3 start-ups, looking at technical differentiators, traction, competitors. Advised Hito (hardware crypto wallet) and Societal Labs (tooling for Blockchain communities) in growth strategies</li>
+              <li>Spearheaded creation of NFT Ticketing System and Marketplace, working cross-functionally with developers and designers. Conducted analysis on 10 competitors, 3 user personas, potential partnerships, and received $2500 grant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://thirdsphere.com/" target="_blank"><img src="thirdsphere.png" alt="Third Sphere Logo"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">Third Sphere – Climate VC Fund</div>
+          <div class="exp-meta">San Francisco, CA &bull; Venture Capital Fellow &bull; September 2023 – December 2023</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Delivered tailored metrics and reports to Limited Partners (LPs), led Request for Proposal (RFP) initiatives, drafted transparent communications for stakeholders, and actively evaluated early-stage climate and consumer startup deals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <a href="https://www.tk-partners.com/" target="_blank"><img src="tkpartners.png" alt="TK & Partners Logo"></a>
+        </div>
+        <div class="exp-details">
+          <div class="exp-title">TK & Partners – Venture Capital Firm formed by McKinsey's ex-senior partner, Dr. Tomas Koch</div>
+          <div class="exp-meta">Bangkok, Thailand &bull; Venture Capital Analyst Intern &bull; June 2021 – August 2021</div>
+          <div class="exp-desc">
+            <ul style="margin: 0; padding-left: 1.2em;">
+              <li>Conducted quantitative analysis to calculate market sizes for 7 countries and 4 markets: fertility, food allergies, DNA, indoor allergies</li>
+              <li>Presented an investment thesis for WelalaDNA, a healthcare startup, which was later successfully acquired and secured a >10x MOIC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Awards</h2>
+      <ul class="awards-list" style="list-style: disc inside; margin: 0; padding-left: 1.2em;">
+        <li>2nd Place - Disney Industrial Engineering Case Competition 2023 (Disney, Oct 2023)</li>
+        <li>2nd Place - Zendesk Case Competition 2022 (Zendesk and EGAL, Sep 2022)</li>
+        <li>1st Runner Up - SCB10X Metathon 2022: Metaverse Infrastructure Track (SCB10X, May 2022)</li>
+        <li>2nd Place - LinkedIn Case Competition 2022 (LinkedIn, Apr 2022)</li>
+        <li>1st Place - PwC Challenge Case Competition 2021 (PricewaterhouseCoopers, Oct 2021)</li>
+        <li>1st Place Winner - Youths for Sustainable Development Goals (Jan 2020)</li>
+        <li>1st Place - Rising Star London Music Festival Competition 2020, Harp Chamber (Jan 2020)</li>
+        <li>Finalist - AIS x Stanford University Young Digital Talent Camp, Top-3 in Pitch Score (Jan 2020)</li>
+        <li>1st Place - Financial Investment Competition for Global Young Leaders Academy 2019 (Wharton Global Youth Program - University of Pennsylvania, Jul 2019)</li>
+        <li>1st Place Winner - Harp – The American Protégé International Competition of Romantic Music (Invited to perform solo at Carnegie Hall)</li>
+        <li>2nd Runner-up - AirWear Innovation, Social Innovation Competition by the National Innovation Agency and Thammasat University (2020)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html> 
