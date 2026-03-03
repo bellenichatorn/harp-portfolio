@@ -318,8 +318,8 @@
             }
 
             .bubble-btn {
-                width: 130px;
-                height: 130px;
+                width: 140px;
+                height: 140px;
             }
             .bubble-btn img[alt="Belle Icon"],
             .bubble-btn img[alt="VC Icon"],
@@ -332,15 +332,14 @@
                 font-size: 0.9rem !important;
             }
 
-            /* Reposition bubbles to stay within viewport */
             .bubble-btn[href="bio.html"] {
-                left: -50px !important;
+                left: -55px !important;
             }
             .bubble-btn[href*="notion.so"] {
-                right: -30px !important;
+                right: -35px !important;
             }
             .bubble-btn[href="resume.html"] {
-                left: -50px !important;
+                left: -55px !important;
             }
             .bubble-btn[href*="blogs.html"] {
                 right: 0px !important;
@@ -371,11 +370,11 @@
             }
         }
 
-        /* Small phones */
+        /* Small phones (375px - 480px) */
         @media (max-width: 480px) {
             .header {
-                top: 1.2rem;
-                width: 90%;
+                top: 1rem;
+                width: 92%;
             }
 
             .header h1 {
@@ -387,60 +386,58 @@
             }
 
             .container {
-                margin-top: 5.5rem;
-                padding: 1rem;
+                margin-top: 5rem;
+                padding: 0.5rem;
             }
 
             .harp-container {
-                width: 240px;
-                height: 310px;
+                width: 300px;
+                height: 390px;
                 margin-bottom: 2rem;
             }
 
             .bubble-btn {
-                width: 95px;
-                height: 95px;
+                width: 105px;
+                height: 105px;
             }
             .bubble-btn img[alt="Belle Icon"],
             .bubble-btn img[alt="VC Icon"],
             .bubble-btn img[alt="Resume Icon"],
             .bubble-btn img[alt="Writing Icon"] {
-                width: 32px !important;
-                height: 32px !important;
+                width: 35px !important;
+                height: 35px !important;
             }
             .bubble-btn span {
-                font-size: 0.7rem !important;
-                top: 52% !important;
+                font-size: 0.75rem !important;
             }
 
-            /* Keep all 4 bubbles within ~375px viewport */
+            /* On 375px screen, container starts ~37px from edge.
+               Bubbles must stay within 0–375px */
             .bubble-btn[href="bio.html"] {
-                left: -35px !important;
-                top: 5px !important;
+                left: -30px !important;
+                top: 10px !important;
             }
             .bubble-btn[href*="notion.so"] {
-                right: -20px !important;
-                top: 5px !important;
+                right: -25px !important;
+                top: 10px !important;
             }
             .bubble-btn[href="resume.html"] {
-                left: -35px !important;
-                bottom: 5px !important;
+                left: -30px !important;
+                bottom: 10px !important;
             }
             .bubble-btn[href*="blogs.html"] {
-                right: 5px !important;
-                bottom: 5px !important;
+                right: -5px !important;
+                bottom: 10px !important;
             }
 
             .info-container {
-                width: 60px;
-                height: 50px;
-                left: 40%;
-                bottom: -10%;
+                width: 70px;
+                height: 60px;
             }
 
             .info-icon {
-                width: 40px !important;
-                height: 40px !important;
+                width: 45px !important;
+                height: 45px !important;
             }
 
             .hint-text {
@@ -455,10 +452,6 @@
 
             .instructions p {
                 font-size: 0.75rem;
-            }
-
-            .note-display {
-                font-size: 0.9rem !important;
             }
         }
 
