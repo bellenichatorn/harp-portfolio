@@ -301,11 +301,15 @@
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             .header p {
-                font-size: 1.1rem;
+                font-size: 0.95rem;
+            }
+
+            .container {
+                margin-top: 7rem;
             }
 
             .harp-container {
@@ -313,9 +317,148 @@
                 height: 450px;
             }
 
+            .bubble-btn {
+                width: 130px;
+                height: 130px;
+            }
+            .bubble-btn img[alt="Belle Icon"],
+            .bubble-btn img[alt="VC Icon"],
+            .bubble-btn img[alt="Resume Icon"],
+            .bubble-btn img[alt="Writing Icon"] {
+                width: 45px !important;
+                height: 45px !important;
+            }
+            .bubble-btn span {
+                font-size: 0.9rem !important;
+            }
+
+            /* Reposition bubbles to stay within viewport */
+            .bubble-btn[href="bio.html"] {
+                left: -50px !important;
+            }
+            .bubble-btn[href*="notion.so"] {
+                right: -30px !important;
+            }
+            .bubble-btn[href="resume.html"] {
+                left: -50px !important;
+            }
+            .bubble-btn[href*="blogs.html"] {
+                right: 0px !important;
+            }
+
+            .info-container {
+                width: 90px;
+                height: 80px;
+            }
+
+            .info-icon {
+                width: 60px !important;
+                height: 60px !important;
+            }
+
+            .hint-text {
+                font-size: 0.75rem;
+                margin-right: 8px;
+            }
+
             .instructions {
                 width: 90%;
                 padding: 1rem;
+                min-width: 180px;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, 10px);
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .header {
+                top: 1.2rem;
+                width: 90%;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 0.8rem;
+            }
+
+            .container {
+                margin-top: 5.5rem;
+                padding: 1rem;
+            }
+
+            .harp-container {
+                width: 240px;
+                height: 310px;
+                margin-bottom: 2rem;
+            }
+
+            .bubble-btn {
+                width: 95px;
+                height: 95px;
+            }
+            .bubble-btn img[alt="Belle Icon"],
+            .bubble-btn img[alt="VC Icon"],
+            .bubble-btn img[alt="Resume Icon"],
+            .bubble-btn img[alt="Writing Icon"] {
+                width: 32px !important;
+                height: 32px !important;
+            }
+            .bubble-btn span {
+                font-size: 0.7rem !important;
+                top: 52% !important;
+            }
+
+            /* Keep all 4 bubbles within ~375px viewport */
+            .bubble-btn[href="bio.html"] {
+                left: -35px !important;
+                top: 5px !important;
+            }
+            .bubble-btn[href*="notion.so"] {
+                right: -20px !important;
+                top: 5px !important;
+            }
+            .bubble-btn[href="resume.html"] {
+                left: -35px !important;
+                bottom: 5px !important;
+            }
+            .bubble-btn[href*="blogs.html"] {
+                right: 5px !important;
+                bottom: 5px !important;
+            }
+
+            .info-container {
+                width: 60px;
+                height: 50px;
+                left: 40%;
+                bottom: -10%;
+            }
+
+            .info-icon {
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            .hint-text {
+                font-size: 0.6rem;
+                margin-right: 4px;
+            }
+
+            .instructions {
+                min-width: 150px;
+                font-size: 0.8rem;
+            }
+
+            .instructions p {
+                font-size: 0.75rem;
+            }
+
+            .note-display {
+                font-size: 0.9rem !important;
             }
         }
 
