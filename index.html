@@ -301,11 +301,15 @@
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             .header p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            }
+
+            .container {
+                margin-top: 7rem;
             }
 
             .harp-container {
@@ -313,9 +317,148 @@
                 height: 450px;
             }
 
+            .bubble-btn {
+                width: 130px;
+                height: 130px;
+            }
+            .bubble-btn img[alt="Belle Icon"],
+            .bubble-btn img[alt="VC Icon"],
+            .bubble-btn img[alt="Resume Icon"],
+            .bubble-btn img[alt="Writing Icon"] {
+                width: 45px !important;
+                height: 45px !important;
+            }
+            .bubble-btn span {
+                font-size: 0.9rem !important;
+            }
+
+            /* Reposition bubbles to stay within viewport */
+            .bubble-btn:nth-child(5) { /* About - top left */
+                left: -60px !important;
+            }
+            .bubble-btn:nth-child(6) { /* Investing - top right */
+                right: -40px !important;
+            }
+            .bubble-btn:nth-child(7) { /* Resume - bottom left */
+                left: -60px !important;
+            }
+            .bubble-btn:nth-child(8) { /* Writings - bottom right */
+                right: -20px !important;
+            }
+
+            .info-container {
+                width: 90px;
+                height: 80px;
+            }
+
+            .info-icon {
+                width: 60px !important;
+                height: 60px !important;
+            }
+
+            .hint-text {
+                font-size: 0.75rem;
+                margin-right: 8px;
+            }
+
             .instructions {
                 width: 90%;
                 padding: 1rem;
+                min-width: 180px;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, 10px);
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .header {
+                top: 1.2rem;
+                width: 90%;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 0.85rem;
+            }
+
+            .container {
+                margin-top: 5.5rem;
+                padding: 1rem;
+            }
+
+            .harp-container {
+                width: 260px;
+                height: 340px;
+                margin-bottom: 2rem;
+            }
+
+            .bubble-btn {
+                width: 100px;
+                height: 100px;
+            }
+            .bubble-btn img[alt="Belle Icon"],
+            .bubble-btn img[alt="VC Icon"],
+            .bubble-btn img[alt="Resume Icon"],
+            .bubble-btn img[alt="Writing Icon"] {
+                width: 35px !important;
+                height: 35px !important;
+            }
+            .bubble-btn span {
+                font-size: 0.75rem !important;
+                top: 52% !important;
+            }
+
+            /* Keep bubbles within viewport on small phones */
+            .bubble-btn:nth-child(5) { /* About - top left */
+                left: -45px !important;
+                top: 0px !important;
+            }
+            .bubble-btn:nth-child(6) { /* Investing - top right */
+                right: -30px !important;
+                top: 0px !important;
+            }
+            .bubble-btn:nth-child(7) { /* Resume - bottom left */
+                left: -45px !important;
+                bottom: 0px !important;
+            }
+            .bubble-btn:nth-child(8) { /* Writings - bottom right */
+                right: -10px !important;
+                bottom: 0px !important;
+            }
+
+            .info-container {
+                width: 70px;
+                height: 60px;
+                left: 40%;
+                bottom: -8%;
+            }
+
+            .info-icon {
+                width: 45px !important;
+                height: 45px !important;
+            }
+
+            .hint-text {
+                font-size: 0.65rem;
+                margin-right: 5px;
+            }
+
+            .instructions {
+                min-width: 160px;
+                font-size: 0.8rem;
+            }
+
+            .instructions p {
+                font-size: 0.75rem;
+            }
+
+            .note-display {
+                font-size: 0.9rem !important;
             }
         }
 
