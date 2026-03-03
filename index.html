@@ -390,67 +390,87 @@
                 padding: 0.5rem;
             }
 
+            /* Use padding-top to reserve space for the absolute harp image,
+               then let bubbles flow naturally in the content area below */
             .harp-container {
                 width: 280px;
-                height: 365px;
-                margin-bottom: 190px; /* room for 2 rows of bubbles below */
+                height: auto;
+                padding-top: 365px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                padding-bottom: 10px;
             }
 
-            /* Move all bubbles below the harp in a 2x2 grid */
+            /* Pin harp image and strings to the top padding area */
+            .harp-image,
+            .strings-overlay {
+                width: 280px !important;
+                height: 365px !important;
+                top: 0 !important;
+                left: 0 !important;
+            }
+
+            .note-display {
+                top: 360px !important;
+            }
+
+            /* Switch bubbles from absolute to flow layout */
             .bubble-btn {
-                width: 80px;
-                height: 80px;
+                position: relative !important;
+                top: auto !important;
+                bottom: auto !important;
+                left: auto !important;
+                right: auto !important;
+                width: 120px;
+                height: 120px;
             }
             .bubble-btn img[alt="Belle Icon"],
             .bubble-btn img[alt="VC Icon"],
             .bubble-btn img[alt="Resume Icon"],
             .bubble-btn img[alt="Writing Icon"] {
-                width: 30px !important;
-                height: 30px !important;
+                width: 40px !important;
+                height: 40px !important;
             }
             .bubble-btn span {
-                font-size: 0.7rem !important;
+                font-size: 0.8rem !important;
             }
 
-            /* Row 1: About + Investing, below harp */
-            .bubble-btn[href="bio.html"] {
-                top: auto !important;
-                bottom: -95px !important;
-                left: 50px !important;
-            }
-            .bubble-btn[href*="notion.so"] {
-                top: auto !important;
-                bottom: -95px !important;
-                right: 50px !important;
-            }
-
-            /* Row 2: Resume + Writings */
-            .bubble-btn[href="resume.html"] {
-                bottom: -185px !important;
-                left: 50px !important;
-            }
-            .bubble-btn[href*="blogs.html"] {
-                bottom: -185px !important;
-                right: 50px !important;
-            }
-
+            /* Info section below bubbles */
             .info-container {
-                width: 70px;
-                height: 60px;
-            }
-
-            .info-icon {
-                width: 45px !important;
-                height: 45px !important;
+                position: relative !important;
+                left: auto !important;
+                bottom: auto !important;
+                transform: none !important;
+                width: 100%;
+                height: auto;
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
             }
 
             .hint-text {
-                font-size: 0.6rem;
-                margin-right: 4px;
+                position: static !important;
+                transform: none !important;
+                margin-right: 0;
+                font-size: 0.7rem;
+            }
+
+            .info-icon {
+                position: static !important;
+                transform: none !important;
+                width: 40px !important;
+                height: 40px !important;
             }
 
             .instructions {
-                min-width: 150px;
+                left: 50% !important;
+                top: 100% !important;
+                transform: translate(-50%, 5px) !important;
+                min-width: 200px;
                 font-size: 0.8rem;
             }
 
