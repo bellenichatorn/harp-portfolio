@@ -393,8 +393,7 @@
             .harp-container {
                 width: 280px;
                 height: 365px;
-                margin-top: 60px; /* room for top bubbles above */
-                margin-bottom: 100px; /* room for bottom bubbles below */
+                margin-bottom: 190px; /* room for 2 rows of bubbles below */
             }
 
             /* Move all bubbles below the harp in a 2x2 grid */
@@ -413,16 +412,16 @@
                 font-size: 0.7rem !important;
             }
 
-            /* Row 1: About + Investing, above harp */
+            /* Row 1: About + Investing, below harp */
             .bubble-btn[href="bio.html"] {
-                top: -70px !important;
-                bottom: auto !important;
-                left: 20px !important;
+                top: auto !important;
+                bottom: -95px !important;
+                left: 50px !important;
             }
             .bubble-btn[href*="notion.so"] {
-                top: -70px !important;
-                bottom: auto !important;
-                right: 20px !important;
+                top: auto !important;
+                bottom: -95px !important;
+                right: 50px !important;
             }
 
             /* Row 2: Resume + Writings */
